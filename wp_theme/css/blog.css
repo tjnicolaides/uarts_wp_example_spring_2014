@@ -44,7 +44,7 @@ h6, .h6 {
 .blog-nav {
 
 }
-.blog-nav-item {
+.blog-nav-item, .blog-nav a {
   position: relative;
   display: inline-block;
   padding: 10px;
@@ -52,7 +52,8 @@ h6, .h6 {
   color: #cdddeb;
 }
 .blog-nav-item:hover,
-.blog-nav-item:focus {
+.blog-nav-item:focus, .blog-nav a:hover,
+.blog-nav a:focus {
   color: #fff;
   text-decoration: none;
 }

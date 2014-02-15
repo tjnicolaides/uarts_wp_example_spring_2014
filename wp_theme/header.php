@@ -29,13 +29,24 @@
 
     <div class="blog-masthead">
       <div class="container">
-        <nav class="blog-nav">
+      <nav class="blog-nav">
+      	<?php $menuParameters = array(
+      		  'theme_location' => 'main_menu',
+			  'container'       => false,
+			  'echo'            => false,
+			  'items_wrap'      => '%3$s',
+			  'depth'           => 0,
+			  );
+
+		  echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' ); ?>
+      </nav>
+        <!--<nav class="blog-nav">
           <a class="blog-nav-item active" href="#">Home</a>
           <a class="blog-nav-item" href="#">New features</a>
           <a class="blog-nav-item" href="#">Press</a>
           <a class="blog-nav-item" href="#">New hires</a>
           <a class="blog-nav-item" href="#">About</a>
-        </nav>
+        </nav>-->
       </div>
     </div>
 	<div class="jumbotron">
