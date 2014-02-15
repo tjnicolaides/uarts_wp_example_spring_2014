@@ -16,10 +16,13 @@
 				<! -- this is our post / page content END --> 
 			<?php endwhile; ?>
 			
-          <ul class="pager">
-            <li><a href="#">Previous</a></li>
-            <li><a href="#">Next</a></li>
-          </ul>
+			<?php global $wp_query; $total_pages = $wp_query->max_num_pages; if ( $total_pages > 1 ) { ?>
+
+	          <ul class="pager">
+	            <li><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> Previous', 'your-theme' )) ?></li>
+	            <li><?php previous_posts_link(__( 'Next <span class="meta-nav">&raquo;</span>', 'your-theme' )) ?></li>
+	          </ul>
+		  <?php } ?>
 
         </div><!-- /.blog-main -->
 		
