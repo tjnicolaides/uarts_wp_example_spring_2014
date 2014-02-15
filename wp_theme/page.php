@@ -16,11 +16,6 @@
 				<! -- this is our post / page content END --> 
 			<?php endwhile; ?>
 			
-          <ul class="pager">
-            <li><a href="#">Previous</a></li>
-            <li><a href="#">Next</a></li>
-          </ul>
-
         </div><!-- /.blog-main -->
 		
 		<?php get_sidebar(); ?>

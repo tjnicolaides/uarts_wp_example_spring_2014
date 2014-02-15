@@ -22,7 +22,7 @@
 	            <li><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> Previous', 'your-theme' )) ?></li>
 	            <li><?php previous_posts_link(__( 'Next <span class="meta-nav">&raquo;</span>', 'your-theme' )) ?></li>
 	          </ul>
-		  <?php } ?>
+			 <?php } ?>
 
         </div><!-- /.blog-main -->
 		

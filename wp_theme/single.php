@@ -17,8 +17,8 @@
 			<?php endwhile; ?>
 			
           <ul class="pager">
-            <li><a href="#">Previous</a></li>
-            <li><a href="#">Next</a></li>
+            <li><?php previous_post_link( '%link', '<span class="meta-nav">&laquo;</span> %title' ) ?></li>
+            <li><?php next_post_link( '%link', '%title <span class="meta-nav">&raquo;</span>' ) ?></li>
           </ul>
 
         </div><!-- /.blog-main -->
